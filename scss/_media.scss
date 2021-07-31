@@ -1,0 +1,22 @@
+@media (max-width: 480px) {
+  html {
+    font-size: 67%;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+
+  //COLECCIONES
+  .colecciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .colecciones__contenedor {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "global";
+@import "media";
+@import "../bootstrap/scss/bootstrap";
+
+$titulos: 3rem;
+$textos: 1.1rem;
+
+body {
+  font-family: "Nanum Myeongjo", serif;
+  background-color: #ffffef;
+}
+
+/*------------------------------CARRUSEL----------------------------------*/
+
+.home {
+  div {
+    .contenedor-texto {
+      font-size: $textos;
+      border-left: solid 3px;
+      padding: 20px;
+      margin: 50px;
+      background-color: rgba(255, 213, 149, 0.705);
+    }
+  }
+
+  div {
+    .bg2 {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(137, 207, 216, 0.3)
+        ),
+        url("../imagenes/background-index2.jpg");
+      height: 80vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+}
+
+/*-----------------------------------COLECCIONES---------------------------------------*/
+
+.colecciones {
+  div {
+    .colecciones__titulo {
+      text-align: center;
+      font-size: 35px;
+    }
+    .colecciones__contenedor {
+      display: flex;
+      justify-content: space-around;
+
+      border-bottom: solid 3px;
+      padding: 20px;
+      margin: 50px;
+      background-color: rgba(255, 226, 146, 0.705);
+
+      .colecciones__img {
+        width: 25rem;
+        margin: 0.5rem;
+        transition: all 0.3s ease-in-out;
+      }
+      .colecciones__img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/*------------------------------------GALERIA-----------------------------------------*/
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .fotos-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+  }
+  .fotos-galeria img {
+    width: 30rem;
+    border-radius: 2.5rem;
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .fotos-galeria img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
+
+/*----------------------------------------CONTACTO--------------------------------------*/
+
+#contacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+
+  .contacto1 {
+    margin: 2rem;
+    border-radius: 5px;
+    background-color: rgba(238, 179, 125, 0.5);
+    padding: 1rem;
+  }
+  .contacto1 input {
+    margin: 1rem 0;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+  }
+  .contacto1 textarea {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .contacto1 select {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+  .contacto1 h2 {
+    margin: 1rem;
+    font-size: 2rem;
+    color: black;
+  }
+  .contacto1 p {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+/*-------------------------------------------PREGUNTAS---------------------------------------*/
+
+.preguntas {
+  background-color: rgba(238, 179, 125, 0.2);
+  border-left: solid 5px;
+  border-color: rgb(0, 0, 0);
+  padding: 2rem;
+  padding-right: 10rem;
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  div {
+    .preguntas__intro {
+      font-size: 1.2rem;
+    }
+  }
+}
+.preguntas__intro--h1 {
+  color: grey;
+  font-size: 6rem;
+  font-family: "Tangerine", cursive;
+  display: flex;
+  justify-content: center;
+}
+.preguntas p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.preguntas h2 {
+  font-size: 2rem;
+  font-style: oblique;
+}
+.preguntas ul {
+  padding: 1rem;
+}
+.preguntas__lista {
+  font-weight: bold;
+  color: rgb(5, 3, 5);
+}
+
+/*-----------------------------------------SOBRE MI-------------------------------------------*/
+.sobre-mi-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .divisor {
+    width: 60vw;
+    height: 30vh;
+  }
+}
+
+.sobre-mi {
+  display: flex;
+  flex-direction: row;
+  width: 99vw;
+
+  div {
+    .sobre-mi-imagen {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(137, 207, 216, 0.3)
+        ),
+        url("../imagenes/ejemplo.PNG");
+      height: 100vh;
+      width: 49.5vw;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+  }
+  .sobre-mi-texto {
+    width: 49.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+    h2 {
+      font-size: 1.5rem;
+      background-color: black;
+      color: white;
+      padding: 0.5rem;
+    }
+
+    .sobre-mi-texto--margin {
+      margin: 6rem;
+      margin-top: 0;
+    }
+  }
+}
