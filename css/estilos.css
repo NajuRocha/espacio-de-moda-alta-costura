@@ -81,6 +81,10 @@ nav a:hover {
         width: 3rem;
         height: 3rem; }
 
+@media (max-width: 768px) {
+  html {
+    font-size: 75%; } }
+
 @media (max-width: 480px) {
   html {
     font-size: 67%; }
@@ -4993,11 +4997,22 @@ body {
   background-color: rgba(255, 213, 149, 0.705); }
 
 .home div .bg2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/background-index2.jpg");
   height: 80vh;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  background-attachment: fixed; }
+  .home div .bg2 .bg2-texto {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10rem;
+    margin-bottom: 10rem;
+    text-align: center; }
 
 /*-----------------------------------COLECCIONES---------------------------------------*/
 .colecciones div .colecciones__titulo {
@@ -5007,6 +5022,7 @@ body {
 .colecciones div .colecciones__contenedor {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   border-bottom: solid 3px;
   padding: 20px;
   margin: 50px;
@@ -5087,7 +5103,7 @@ body {
 
 .preguntas__intro--h1 {
   color: grey;
-  font-size: 6rem;
+  font-size: 4rem;
   font-family: "Tangerine", cursive;
   display: flex;
   justify-content: center; }
