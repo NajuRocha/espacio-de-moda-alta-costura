@@ -45,19 +45,17 @@ header {
         text-align: center;
         color: #000;
         transition: all 0.5s; }
+        header .navbar .navbar-nav .nav-item:hover {
+          background-color: #b4814c;
+          color: #fff; }
         header .navbar .navbar-nav .nav-item .nav-link {
           font-family: Arial, Helvetica, sans-serif;
           text-decoration: none;
           color: inherit;
           font-size: 1rem;
           color: black; }
-
-nav li:hover {
-  background-color: #b4814c;
-  color: #fff; }
-
-nav a:hover {
-  color: inherit; }
+          header .navbar .navbar-nav .nav-item .nav-link:hover {
+            color: inherit; }
 
 /*-------------------------------FOOTER--------------------------------*/
 .pie {
@@ -65,7 +63,7 @@ nav a:hover {
   display: block; }
   .pie .pie-gris {
     height: auto;
-    background-color: #5e5e5e;
+    background-color: #afafaf;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -5050,9 +5048,9 @@ body {
     border-radius: 2.5rem;
     padding: 2rem;
     transition: all 0.3s ease-in-out; }
-  .galeria .fotos-galeria img:hover {
-    transform: scale(1.2);
-    cursor: pointer; }
+    .galeria .fotos-galeria img:hover {
+      transform: scale(1.2);
+      cursor: pointer; }
 
 /*----------------------------------------CONTACTO--------------------------------------*/
 #contacto {

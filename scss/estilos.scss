@@ -108,10 +108,11 @@ body {
     border-radius: 2.5rem;
     padding: 2rem;
     transition: all 0.3s ease-in-out;
-  }
-  .fotos-galeria img:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
   }
 }
 
