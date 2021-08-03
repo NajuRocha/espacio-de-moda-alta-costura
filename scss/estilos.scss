@@ -76,7 +76,7 @@ body {
       font-size: $textos;
     }
     .index-texto-foto {
-      background-image: url("/imagenes/galeria 3.jpg");
+      background-image: url("../imagenes/galeria 3.jpg");
       width: 80%;
       height: 50%;
       background-position: center;
@@ -85,7 +85,7 @@ body {
     }
 
     .index-foto {
-      background-image: url("/imagenes/index-sobre-mi.jpg");
+      background-image: url("../imagenes/index-sobre-mi.jpg");
       margin-top: 10%;
       margin-right: 3rem;
       width: 50vw;
