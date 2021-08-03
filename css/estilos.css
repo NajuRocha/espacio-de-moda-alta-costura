@@ -18,7 +18,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffef; }
+  background-color: white; }
   header div .logo {
     width: 7rem;
     flex: 1; }
@@ -57,13 +57,17 @@ header {
           header .navbar .navbar-nav .nav-item .nav-link:hover {
             color: inherit; }
 
+/*Navbar*/
+.navbar-toggler {
+  margin-top: 1rem; }
+
 /*-------------------------------FOOTER--------------------------------*/
 .pie {
   color: black;
   display: block; }
   .pie .pie-gris {
     height: auto;
-    background-color: #afafaf;
+    background-color: gray;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -79,9 +83,25 @@ header {
         width: 3rem;
         height: 3rem; }
 
+/*-----------------------------PRUEBA FLECHA ARRIBA----------------------------*/
+.flecha-arriba {
+  position: sticky;
+  top: 90%;
+  margin-left: 92%;
+  width: 50px; }
+
 @media (max-width: 768px) {
   html {
-    font-size: 75%; } }
+    font-size: 75%; }
+  .index-sobre-mi .index-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .index-sobre-mi .index-foto {
+    display: none; }
+  .index-sobre-mi .index-texto-foto {
+    width: 100%; } }
 
 @media (max-width: 480px) {
   html {
@@ -96,7 +116,9 @@ header {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      align-items: center; } }
+      align-items: center; }
+  .sobre-mi div .sobre-mi-imagen {
+    height: 60vh; } }
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
@@ -4984,33 +5006,73 @@ textarea.form-control-lg {
 
 body {
   font-family: "Nanum Myeongjo", serif;
-  background-color: #ffffef; }
+  background-color: white; }
 
-/*------------------------------CARRUSEL----------------------------------*/
-.home div .contenedor-texto {
-  font-size: 1.1rem;
-  border-left: solid 3px;
-  padding: 20px;
-  margin: 50px;
-  background-color: rgba(255, 213, 149, 0.705); }
+.home {
+  /*--------------------------INDEX-----------------------------------*/ }
+  .home div .contenedor-texto {
+    font-size: 1.1rem;
+    border-left: solid 3px;
+    padding: 20px;
+    margin: 50px;
+    background-color: white; }
+  .home div .bg1 {
+    background-image: url("../imagenes/bg1.jpg");
+    height: 150vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-position-y: center; }
+  .home div .bg2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/background-index2.jpg");
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-position-y: center; }
+    .home div .bg2 .bg2-texto {
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 10rem;
+      margin-bottom: 10rem;
+      text-align: center; }
+  .home .index-sobre-mi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh; }
+    .home .index-sobre-mi .index-texto {
+      margin: 5%;
+      font-size: 1.1rem; }
+    .home .index-sobre-mi .index-texto-foto {
+      background-image: url("/imagenes/galeria 3.jpg");
+      width: 80%;
+      height: 50%;
+      background-position: center;
+      background-size: cover;
+      border-radius: 1rem; }
+    .home .index-sobre-mi .index-foto {
+      background-image: url("/imagenes/index-sobre-mi.jpg");
+      margin-top: 10%;
+      margin-right: 3rem;
+      width: 50vw;
+      height: 75%;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 1rem; }
+    .home .index-sobre-mi .btn {
+      margin-top: 5%;
+      color: white;
+      background-color: black; }
 
-.home div .bg2 {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/background-index2.jpg");
-  height: 80vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; }
-  .home div .bg2 .bg2-texto {
-    color: white;
-    font-size: 1.5rem;
-    margin: 0 10rem;
-    margin-bottom: 10rem;
-    text-align: center; }
+/*-------------------------------------CARRUSEL------------------------------------------*/
+.h2-carrusel {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(255, 226, 146, 0.705); }
 
 /*-----------------------------------COLECCIONES---------------------------------------*/
 .colecciones div .colecciones__titulo {
@@ -5090,7 +5152,6 @@ body {
   border-left: solid 5px;
   border-color: black;
   padding: 2rem;
-  padding-right: 10rem;
   margin: 5rem;
   display: flex;
   align-items: center;
@@ -5133,10 +5194,10 @@ body {
 .sobre-mi {
   display: flex;
   flex-direction: row;
-  width: 99vw; }
+  width: 100%; }
   .sobre-mi div .sobre-mi-imagen {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/ejemplo.PNG");
-    height: 100vh;
+    height: 90vh;
     width: 49.5vw;
     background-repeat: no-repeat;
     background-position: center center;

@@ -13,10 +13,8 @@ $textos: 1.1rem;
 
 body {
   font-family: "Nanum Myeongjo", serif;
-  background-color: #ffffef;
+  background-color: white;
 }
-
-/*------------------------------CARRUSEL----------------------------------*/
 
 .home {
   div {
@@ -25,27 +23,36 @@ body {
       border-left: solid 3px;
       padding: 20px;
       margin: 50px;
-      background-color: rgba(255, 213, 149, 0.705);
+      background-color: white;
     }
   }
 
-  div {
-    .bg2 {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
+  /*--------------------------INDEX-----------------------------------*/
 
+  div {
+    .bg1 {
+      background-image: url("../imagenes/bg1.jpg");
+      height: 150vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-position-y: center;
+    }
+
+    .bg2 {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.3),
           rgba(137, 207, 216, 0.3)
         ),
         url("../imagenes/background-index2.jpg");
-      height: 80vh;
+      height: 90vh;
       width: 100%;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
       background-attachment: fixed;
+      background-position-y: center;
 
       .bg2-texto {
         color: white;
@@ -57,6 +64,49 @@ body {
       }
     }
   }
+
+  .index-sobre-mi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+
+    .index-texto {
+      margin: 5%;
+      font-size: $textos;
+    }
+    .index-texto-foto {
+      background-image: url("/imagenes/galeria 3.jpg");
+      width: 80%;
+      height: 50%;
+      background-position: center;
+      background-size: cover;
+      border-radius: 1rem;
+    }
+
+    .index-foto {
+      background-image: url("/imagenes/index-sobre-mi.jpg");
+      margin-top: 10%;
+      margin-right: 3rem;
+      width: 50vw;
+      height: 75%;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 1rem;
+    }
+    .btn {
+      margin-top: 5%;
+      color: white;
+      background-color: black;
+    }
+  }
+}
+
+/*-------------------------------------CARRUSEL------------------------------------------*/
+.h2-carrusel {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(255, 226, 146, 0.705);
 }
 
 /*-----------------------------------COLECCIONES---------------------------------------*/
@@ -164,7 +214,6 @@ body {
   border-left: solid 5px;
   border-color: rgb(0, 0, 0);
   padding: 2rem;
-  padding-right: 10rem;
   margin: 5rem;
   display: flex;
   align-items: center;
@@ -214,7 +263,7 @@ body {
 .sobre-mi {
   display: flex;
   flex-direction: row;
-  width: 99vw;
+  width: 100%;
 
   div {
     .sobre-mi-imagen {
@@ -223,7 +272,7 @@ body {
           rgba(137, 207, 216, 0.3)
         ),
         url("../imagenes/ejemplo.PNG");
-      height: 100vh;
+      height: 90vh;
       width: 49.5vw;
       background-repeat: no-repeat;
       background-position: center center;

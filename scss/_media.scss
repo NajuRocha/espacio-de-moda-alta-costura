@@ -2,6 +2,20 @@
   html {
     font-size: 75%;
   }
+  .index-sobre-mi {
+    .index-texto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .index-foto {
+      display: none;
+    }
+    .index-texto-foto {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -23,6 +37,15 @@
       flex-direction: column;
       flex-wrap: wrap;
       align-items: center;
+    }
+  }
+
+  //SOBRE MI
+  .sobre-mi {
+    div {
+      .sobre-mi-imagen {
+        height: 60vh;
+      }
     }
   }
 }
