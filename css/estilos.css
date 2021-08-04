@@ -5008,65 +5008,67 @@ body {
   font-family: "Nanum Myeongjo", serif;
   background-color: white; }
 
-.home {
-  /*--------------------------INDEX-----------------------------------*/ }
-  .home div .contenedor-texto {
-    font-size: 1.1rem;
-    border-left: solid 3px;
-    padding: 20px;
-    margin: 50px;
-    background-color: white; }
-  .home div .bg1 {
-    background-image: url("../imagenes/bg1.jpg");
-    height: 150vh;
-    width: 100%;
-    background-repeat: no-repeat;
+/*INDEX*/
+.home div .contenedor-texto {
+  font-size: 1.1rem;
+  border-left: solid 3px;
+  padding: 20px;
+  margin: 50px;
+  background-color: white; }
+
+.home div .bg1 {
+  background-image: url("../imagenes/bg1.jpg");
+  height: 150vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-position-y: center; }
+
+.home div .bg2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/background-index2.jpg");
+  height: 90vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-position-y: center; }
+  .home div .bg2 .bg2-texto {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10rem;
+    margin-bottom: 10rem;
+    text-align: center; }
+
+.home .index-sobre-mi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh; }
+  .home .index-sobre-mi .index-texto {
+    margin: 5%;
+    font-size: 1.1rem; }
+  .home .index-sobre-mi .index-texto-foto {
+    background-image: url("../imagenes/galeria 3.jpg");
+    width: 80%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem; }
+  .home .index-sobre-mi .index-foto {
+    background-image: url("../imagenes/index-sobre-mi.jpg");
+    margin-top: 10%;
+    margin-right: 3rem;
+    width: 50vw;
+    height: 75%;
     background-size: cover;
     background-position: center center;
-    background-position-y: center; }
-  .home div .bg2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/background-index2.jpg");
-    height: 90vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-position-y: center; }
-    .home div .bg2 .bg2-texto {
-      color: white;
-      font-size: 1.5rem;
-      margin: 0 10rem;
-      margin-bottom: 10rem;
-      text-align: center; }
-  .home .index-sobre-mi {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100vh; }
-    .home .index-sobre-mi .index-texto {
-      margin: 5%;
-      font-size: 1.1rem; }
-    .home .index-sobre-mi .index-texto-foto {
-      background-image: url("/imagenes/galeria 3.jpg");
-      width: 80%;
-      height: 50%;
-      background-position: center;
-      background-size: cover;
-      border-radius: 1rem; }
-    .home .index-sobre-mi .index-foto {
-      background-image: url("/imagenes/index-sobre-mi.jpg");
-      margin-top: 10%;
-      margin-right: 3rem;
-      width: 50vw;
-      height: 75%;
-      background-size: cover;
-      background-position: center center;
-      border-radius: 1rem; }
-    .home .index-sobre-mi .btn {
-      margin-top: 5%;
-      color: white;
-      background-color: black; }
+    border-radius: 1rem; }
+  .home .index-sobre-mi .btn {
+    margin-top: 5%;
+    color: white;
+    background-color: black; }
 
 /*-------------------------------------CARRUSEL------------------------------------------*/
 .h2-carrusel {
