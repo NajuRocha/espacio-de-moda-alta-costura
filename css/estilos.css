@@ -90,6 +90,30 @@ header {
   margin-left: 92%;
   width: 50px; }
 
+/*---------------------------------Error 404---------------------------------*/
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .error h1, .error .h1 {
+    font-size: 5rem; }
+  .error .error-imagen {
+    width: 35rem; }
+  .error p {
+    font-size: 2rem;
+    text-align: center; }
+  .error .volver {
+    background-color: #b4814c;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem; }
+    .error .volver a {
+      color: #fff;
+      text-decoration: none; }
+      .error .volver a:hover {
+        color: #fff; }
+
 @media (max-width: 768px) {
   html {
     font-size: 75%; }
@@ -5009,12 +5033,16 @@ body {
   background-color: white; }
 
 /*INDEX*/
-.home div .contenedor-texto {
-  font-size: 1.1rem;
-  border-left: solid 3px;
-  padding: 20px;
-  margin: 50px;
-  background-color: white; }
+.home .contenedor-index {
+  margin-top: 50px; }
+  .home .contenedor-index .contenedor-titulo {
+    margin-left: 70px; }
+  .home .contenedor-index .contenedor-texto {
+    font-size: 1.1rem;
+    border-left: solid 3px;
+    padding: 20px;
+    margin: 0 50px 50px 50px;
+    background-color: white; }
 
 .home div .bg1 {
   background-image: url("../imagenes/bg1.jpg");

@@ -18,12 +18,17 @@ body {
 
 /*INDEX*/
 .home {
-  div {
+  .contenedor-index {
+    margin-top: 50px;
+
+    .contenedor-titulo {
+      margin-left: 70px;
+    }
     .contenedor-texto {
       font-size: $textos;
       border-left: solid 3px;
       padding: 20px;
-      margin: 50px;
+      margin: 0 50px 50px 50px;
       background-color: white;
     }
   }
