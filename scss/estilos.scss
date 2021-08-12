@@ -9,14 +9,14 @@
 @import "../bootstrap/scss/bootstrap";
 
 $titulos: 3rem;
-$textos: 1.1rem;
+$textos: 1.5rem;
 
 body {
   font-family: "Nanum Myeongjo", serif;
   background-color: white;
 }
 
-/*INDEX*/
+/*----------------------------INDEX----------------------------*/
 .home {
   .contenedor-index {
     margin-top: 50px;
@@ -30,18 +30,21 @@ body {
       padding: 20px;
       margin: 0 50px 50px 50px;
       background-color: white;
+
+      p {
+        text-decoration: wavy;
+      }
     }
   }
 
   div {
     .bg1 {
       background-image: url("../imagenes/bg1.jpg");
-      height: 150vh;
+      height: 180vh;
       width: 100%;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
-      background-position-y: center;
     }
 
     .bg2 {
@@ -77,7 +80,11 @@ body {
 
     .index-texto {
       margin: 5%;
-      font-size: $textos;
+
+      p {
+        margin-left: 0;
+        font-size: $textos;
+      }
     }
     .index-texto-foto {
       background-image: url("../imagenes/galeria 3.jpg");
@@ -213,7 +220,7 @@ body {
 
 /*-------------------------------------------PREGUNTAS---------------------------------------*/
 
-.preguntas {
+#preguntas {
   background-color: rgba(238, 179, 125, 0.2);
   border-left: solid 5px;
   border-color: rgb(0, 0, 0);

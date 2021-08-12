@@ -5032,26 +5032,27 @@ body {
   font-family: "Nanum Myeongjo", serif;
   background-color: white; }
 
-/*INDEX*/
+/*----------------------------INDEX----------------------------*/
 .home .contenedor-index {
   margin-top: 50px; }
   .home .contenedor-index .contenedor-titulo {
     margin-left: 70px; }
   .home .contenedor-index .contenedor-texto {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     border-left: solid 3px;
     padding: 20px;
     margin: 0 50px 50px 50px;
     background-color: white; }
+    .home .contenedor-index .contenedor-texto p {
+      text-decoration: wavy; }
 
 .home div .bg1 {
   background-image: url("../imagenes/bg1.jpg");
-  height: 150vh;
+  height: 180vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  background-position-y: center; }
+  background-position: center center; }
 
 .home div .bg2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/background-index2.jpg");
@@ -5075,8 +5076,10 @@ body {
   justify-content: center;
   height: 100vh; }
   .home .index-sobre-mi .index-texto {
-    margin: 5%;
-    font-size: 1.1rem; }
+    margin: 5%; }
+    .home .index-sobre-mi .index-texto p {
+      margin-left: 0;
+      font-size: 1.5rem; }
   .home .index-sobre-mi .index-texto-foto {
     background-image: url("../imagenes/galeria 3.jpg");
     width: 80%;
@@ -5177,7 +5180,7 @@ body {
     margin-top: 1rem; }
 
 /*-------------------------------------------PREGUNTAS---------------------------------------*/
-.preguntas {
+#preguntas {
   background-color: rgba(238, 179, 125, 0.2);
   border-left: solid 5px;
   border-color: black;
@@ -5187,7 +5190,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.2rem; }
-  .preguntas div .preguntas__intro {
+  #preguntas div .preguntas__intro {
     font-size: 1.2rem; }
 
 .preguntas__intro--h1 {
