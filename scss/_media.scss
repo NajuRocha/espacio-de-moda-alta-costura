@@ -1,4 +1,12 @@
 @media (max-width: 768px) {
+  .home {
+    div {
+      .bg1 {
+        height: 100vh;
+      }
+    }
+  }
+
   html {
     font-size: 75%;
   }
@@ -25,7 +33,6 @@
   p {
     font-size: 1.5rem;
   }
-
   //COLECCIONES
   .colecciones {
     display: flex;

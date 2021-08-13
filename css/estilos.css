@@ -20,7 +20,8 @@ header {
   align-items: center;
   background-color: white; }
   header div .logo {
-    width: 7rem;
+    width: 6rem;
+    margin: 0.3rem;
     flex: 1; }
   header .navbar {
     display: flex;
@@ -115,6 +116,8 @@ header {
         color: #fff; }
 
 @media (max-width: 768px) {
+  .home div .bg1 {
+    height: 100vh; }
   html {
     font-size: 75%; }
   .index-sobre-mi .index-texto {
@@ -5036,7 +5039,7 @@ body {
 .home .contenedor-index {
   margin-top: 50px; }
   .home .contenedor-index .contenedor-titulo {
-    margin-left: 70px; }
+    margin-left: 6.3rem; }
   .home .contenedor-index .contenedor-texto {
     font-size: 1.5rem;
     border-left: solid 3px;
@@ -5047,12 +5050,12 @@ body {
       text-decoration: wavy; }
 
 .home div .bg1 {
-  background-image: url("../imagenes/bg1.jpg");
+  background-image: url("../imagenes/bg-1.png");
   height: 180vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center; }
 
 .home div .bg2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/background-index2.jpg");
@@ -5079,10 +5082,10 @@ body {
     margin: 5%; }
     .home .index-sobre-mi .index-texto p {
       margin-left: 0;
-      font-size: 1.5rem; }
+      font-size: 1.2rem; }
   .home .index-sobre-mi .index-texto-foto {
     background-image: url("../imagenes/galeria 3.jpg");
-    width: 80%;
+    width: 90%;
     height: 50%;
     background-position: center;
     background-size: cover;
@@ -5101,6 +5104,14 @@ body {
     color: white;
     background-color: black; }
 
+.home .btn-index {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 3px;
+  text-decoration: none; }
+
 /*-------------------------------------CARRUSEL------------------------------------------*/
 .h2-carrusel {
   font-size: 2.5rem;
@@ -5108,25 +5119,30 @@ body {
   text-shadow: 1px 1px 2px rgba(255, 226, 146, 0.705); }
 
 /*-----------------------------------COLECCIONES---------------------------------------*/
-.colecciones div .colecciones__titulo {
-  text-align: center;
-  font-size: 35px; }
-
-.colecciones div .colecciones__contenedor {
+.colecciones {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  border-bottom: solid 3px;
-  padding: 20px;
-  margin: 50px;
-  background-color: rgba(255, 226, 146, 0.705); }
-  .colecciones div .colecciones__contenedor .colecciones__img {
-    width: 25rem;
-    margin: 0.5rem;
-    transition: all 0.3s ease-in-out; }
-  .colecciones div .colecciones__contenedor .colecciones__img:hover {
-    transform: scale(1.1);
-    cursor: pointer; }
+  flex-direction: column;
+  align-items: center; }
+  .colecciones h1, .colecciones .h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0.5rem; }
+  .colecciones div .colecciones-contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: solid 3px;
+    padding: 20px;
+    margin: 50px;
+    background-color: rgba(238, 179, 125, 0.5); }
+    .colecciones div .colecciones-contenedor .colecciones-img {
+      width: 25rem;
+      margin: 0.5rem;
+      transition: all 0.3s ease-in-out; }
+    .colecciones div .colecciones-contenedor .colecciones-img:hover {
+      transform: scale(1.1);
+      cursor: pointer; }
 
 /*------------------------------------GALERIA-----------------------------------------*/
 .galeria {
@@ -5160,17 +5176,22 @@ body {
     background-color: rgba(238, 179, 125, 0.5);
     padding: 1rem; }
   #contacto .contacto1 input {
-    margin: 1rem 0;
+    margin: 1rem 1rem;
     padding: 10px;
     font-size: 1.1rem;
     border-radius: 10px; }
+  #contacto .correo {
+    width: 25rem; }
   #contacto .contacto1 textarea {
+    padding: 1rem;
+    margin: 1rem 1rem;
     font-size: 1.5rem;
     border-radius: 10px;
-    width: 100%; }
+    width: 90%; }
   #contacto .contacto1 select {
-    margin: 1rem;
-    font-size: 1rem; }
+    margin: 1rem 1rem;
+    font-size: 1.3rem;
+    width: 20rem; }
   #contacto .contacto1 h2, #contacto .contacto1 .h2 {
     margin: 1rem;
     font-size: 2rem;
@@ -5190,30 +5211,24 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.2rem; }
-  #preguntas div .preguntas__intro {
+  #preguntas div .preguntas-intro {
     font-size: 1.2rem; }
-
-.preguntas__intro--h1 {
-  color: grey;
-  font-size: 4rem;
-  font-family: "Tangerine", cursive;
-  display: flex;
-  justify-content: center; }
-
-.preguntas p {
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
-
-.preguntas h2, .preguntas .h2 {
-  font-size: 2rem;
-  font-style: oblique; }
-
-.preguntas ul {
-  padding: 1rem; }
-
-.preguntas__lista {
-  font-weight: bold;
-  color: #050305; }
+  #preguntas div .preguntas-intro-h1 {
+    color: grey;
+    font-size: 4rem;
+    font-family: "Tangerine", cursive;
+    display: flex;
+    justify-content: center; }
+  #preguntas div p {
+    margin: 1rem 0rem 1rem 2rem; }
+  #preguntas div h2, #preguntas div .h2 {
+    font-size: 2rem;
+    font-style: oblique; }
+  #preguntas div ul {
+    margin-left: 1.5rem; }
+  #preguntas div .preguntas-lista {
+    font-weight: bold;
+    color: #050305; }
 
 /*-----------------------------------------SOBRE MI-------------------------------------------*/
 .sobre-mi-intro {
@@ -5228,8 +5243,22 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%; }
-  .sobre-mi div .sobre-mi-imagen {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/ejemplo.PNG");
+  .sobre-mi div .sobremi-imagen-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/sobremi-1.PNG");
+    height: 90vh;
+    width: 49.5vw;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; }
+  .sobre-mi div .sobremi-imagen-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/sobremi-2.PNG");
+    height: 90vh;
+    width: 49.5vw;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; }
+  .sobre-mi div .sobremi-imagen-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/sobremi-1.PNG");
     height: 90vh;
     width: 49.5vw;
     background-repeat: no-repeat;
