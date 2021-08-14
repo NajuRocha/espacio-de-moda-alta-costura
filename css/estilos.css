@@ -42,7 +42,7 @@ header {
         border-radius: 10px;
         cursor: pointer;
         list-style: none;
-        padding: 1rem 1rem;
+        padding: 1rem;
         text-align: center;
         color: #000;
         transition: all 0.5s; }
@@ -89,7 +89,7 @@ header {
   position: sticky;
   top: 90%;
   margin-left: 92%;
-  width: 50px; }
+  width: 5rem; }
 
 /*---------------------------------Error 404---------------------------------*/
 .error {
@@ -115,11 +115,15 @@ header {
       .error .volver a:hover {
         color: #fff; }
 
+@media (max-widht: 991px) {
+  .home div .bg1 div h2, .home div .bg1 div .h2 {
+    font-size: 4rem; } }
+
 @media (max-width: 768px) {
-  .home div .bg1 {
-    height: 100vh; }
   html {
     font-size: 75%; }
+  .home div .bg1 {
+    height: 100vh; }
   .index-sobre-mi .index-texto {
     display: flex;
     flex-direction: column;
@@ -128,9 +132,28 @@ header {
   .index-sobre-mi .index-foto {
     display: none; }
   .index-sobre-mi .index-texto-foto {
-    width: 100%; } }
+    width: 100%; }
+  section .sobre-mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    section .sobre-mi div .sobremi-imagen-1 {
+      height: 60vh;
+      width: 80vw;
+      margin: 5rem; }
+    section .sobre-mi div .sobremi-imagen-2 {
+      height: 60vh;
+      width: 80vw;
+      margin: 5rem; }
+    section .sobre-mi div .sobremi-imagen-3 {
+      height: 60vh;
+      width: 80vw;
+      margin: 5rem; }
+    section .sobre-mi .sobre-mi-texto {
+      width: 80vw; } }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) and (max-width: 480px) {
   html {
     font-size: 67%; }
   p {
@@ -5043,19 +5066,30 @@ body {
   .home .contenedor-index .contenedor-texto {
     font-size: 1.5rem;
     border-left: solid 3px;
-    padding: 20px;
-    margin: 0 50px 50px 50px;
+    padding: 1.2rem;
+    margin: 4rem;
+    margin-top: 0;
     background-color: white; }
     .home .contenedor-index .contenedor-texto p {
-      text-decoration: wavy; }
+      text-decoration: wavy;
+      margin-top: 1rem; }
 
 .home div .bg1 {
-  background-image: url("../imagenes/bg-1.png");
+  background-image: url("../imagenes/bg1.jpg");
   height: 180vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+  .home div .bg1 div {
+    padding-top: 10rem; }
+    .home div .bg1 div h1, .home div .bg1 div .h1, .home div .bg1 div h2, .home div .bg1 div .h2 {
+      text-align: center;
+      color: black;
+      font-size: 7rem;
+      text-shadow: 1px 1px 2px black; }
+    .home div .bg1 div h2, .home div .bg1 div .h2 {
+      font-size: 5rem; }
 
 .home div .bg2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/background-index2.jpg");
@@ -5066,12 +5100,6 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-position-y: center; }
-  .home div .bg2 .bg2-texto {
-    color: white;
-    font-size: 1.5rem;
-    margin: 0 10rem;
-    margin-bottom: 10rem;
-    text-align: center; }
 
 .home .index-sobre-mi {
   display: flex;
@@ -5107,9 +5135,10 @@ body {
 .home .btn-index {
   background-color: black;
   color: white;
-  padding: 10px;
-  font-size: 16px;
+  padding: 0.6rem;
+  font-size: 1rem;
   border-radius: 3px;
+  margin-top: 1rem;
   text-decoration: none; }
 
 /*-------------------------------------CARRUSEL------------------------------------------*/
@@ -5184,12 +5213,12 @@ body {
     width: 25rem; }
   #contacto .contacto1 textarea {
     padding: 1rem;
-    margin: 1rem 1rem;
+    margin: 1rem;
     font-size: 1.5rem;
     border-radius: 10px;
     width: 90%; }
   #contacto .contacto1 select {
-    margin: 1rem 1rem;
+    margin: 1rem;
     font-size: 1.3rem;
     width: 20rem; }
   #contacto .contacto1 h2, #contacto .contacto1 .h2 {
@@ -5263,7 +5292,7 @@ body {
     width: 49.5vw;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain; }
+    background-size: cover; }
   .sobre-mi .sobre-mi-texto {
     width: 49.5vw;
     display: flex;
