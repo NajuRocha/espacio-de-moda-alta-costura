@@ -155,9 +155,9 @@ header {
 
 @media (max-width: 768px) and (max-width: 480px) {
   html {
-    font-size: 67%; }
-  p {
-    font-size: 1.5rem; }
+    font-size: 60%; }
+    html p {
+      font-size: 1.2rem; }
   .colecciones {
     display: flex;
     flex-direction: column;
@@ -5205,10 +5205,11 @@ body {
     background-color: rgba(238, 179, 125, 0.5);
     padding: 1rem; }
   #contacto .contacto1 input {
-    margin: 1rem 1rem;
+    margin: 1rem;
     padding: 10px;
     font-size: 1.1rem;
-    border-radius: 10px; }
+    border-radius: 10px;
+    width: 25rem; }
   #contacto .correo {
     width: 25rem; }
   #contacto .contacto1 textarea {
