@@ -1,17 +1,3 @@
-@media (max-widht: 991px) {
-  .home {
-    div {
-      .bg1 {
-        div {
-          h2 {
-            font-size: 4rem;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 768px) {
   //GENERAL INDEX
   html {
@@ -20,7 +6,13 @@
   .home {
     div {
       .bg1 {
-        height: 100vh;
+        height: 120vh !important;
+        div {
+          h1,
+          h2 {
+            font-size: 5rem !important;
+          }
+        }
       }
     }
   }
@@ -36,6 +28,9 @@
     }
     .index-texto-foto {
       width: 100%;
+    }
+    .btn {
+      margin-top: 2rem !important;
     }
   }
   //SOBRE MI
@@ -64,6 +59,10 @@
       }
       .sobre-mi-texto {
         width: 80vw;
+        .sobre-mi-texto--margin {
+          margin: 0;
+          margin-bottom: 6rem;
+        }
       }
     }
   }
