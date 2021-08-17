@@ -83,7 +83,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 100vh;
+    height: 110vh;
 
     .index-texto {
       margin: 5%;
@@ -91,6 +91,7 @@ body {
       p {
         margin-left: 0;
         font-size: 1.2rem;
+        margin-top: 2rem;
       }
     }
     .index-texto-foto {
@@ -99,30 +100,26 @@ body {
       height: 50%;
       background-position: center;
       background-size: cover;
-      border-radius: 1rem;
+      border-radius: 0.6rem;
     }
 
     .index-foto {
       background-image: url("../imagenes/index-sobre-mi.jpg");
       margin-top: 10%;
+      margin-bottom: 10%;
       margin-right: 3rem;
-      width: 50vw;
-      height: 75%;
+      width: 40vw;
+      height: 80%;
       background-size: cover;
       background-position: center center;
-      border-radius: 1rem;
-    }
-    .btn {
-      margin-top: 5%;
-      color: white;
-      background-color: black;
+      border-radius: 0.8rem;
     }
   }
   .btn-index {
     background-color: black;
     color: white;
-    padding: 0.6rem;
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
     border-radius: 3px;
     margin-top: 1rem;
     text-decoration: none;
@@ -277,15 +274,14 @@ body {
   justify-content: center;
   font-size: 1.2rem;
   div {
-    .preguntas-intro {
-      font-size: 1.2rem;
-    }
-    .preguntas-intro-h1 {
-      color: grey;
-      font-size: 4rem;
+    h1 {
+      font-size: 6rem;
       font-family: "Tangerine", cursive;
       display: flex;
       justify-content: center;
+    }
+    .preguntas-intro {
+      font-size: 1.2rem;
     }
     p {
       margin: 1rem 0rem 1rem 2rem;
@@ -303,6 +299,48 @@ body {
     }
     iframe {
       padding-right: 3rem;
+    }
+  }
+}
+
+/*-----------------------------------CONSULTAS POR WHATSAPP-----------------------------------*/
+
+.consultas-wp {
+  background-image: url(../imagenes/bg-consultas.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      text-align: center;
+      color: white;
+      font-size: 3rem;
+      margin: 2rem;
+    }
+    p {
+      color: white;
+      font-size: 1.2rem;
+      margin: 2rem;
+      margin-top: 1rem;
+      width: 70%;
+      text-align: center;
+
+      .btn-consultas {
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        border-radius: 3px;
+        text-decoration: none;
+      }
     }
   }
 }

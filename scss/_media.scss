@@ -22,15 +22,13 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-left: 5% !important;
     }
     .index-foto {
       display: none;
     }
     .index-texto-foto {
       width: 100%;
-    }
-    .btn {
-      margin-top: 2rem !important;
     }
   }
   //SOBRE MI
@@ -66,34 +64,34 @@
       }
     }
   }
+}
 
-  @media (max-width: 480px) {
-    html {
-      font-size: 60%;
-      p {
-        font-size: 1.2rem;
-      }
+@media (max-width: 480px) {
+  html {
+    font-size: 60%;
+    p {
+      font-size: 1.2rem;
     }
-    //COLECCIONES
-    .colecciones {
+  }
+  //COLECCIONES
+  .colecciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .colecciones__contenedor {
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       align-items: center;
-
-      .colecciones__contenedor {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-      }
     }
+  }
 
-    //SOBRE MI
-    .sobre-mi {
-      div {
-        .sobre-mi-imagen {
-          height: 60vh;
-        }
+  //SOBRE MI
+  .sobre-mi {
+    div {
+      .sobre-mi-imagen {
+        height: 60vh;
       }
     }
   }
