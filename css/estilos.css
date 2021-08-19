@@ -42,7 +42,7 @@ header {
         border-radius: 10px;
         cursor: pointer;
         list-style: none;
-        padding: 1rem;
+        padding: 0.5rem 1rem;
         text-align: center;
         color: #000;
         transition: all 0.5s; }
@@ -5342,21 +5342,21 @@ body {
   flex-direction: row;
   width: 100%; }
   .sobre-mi div .sobremi-imagen-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/sobremi-1.PNG");
+    background-image: url("../imagenes/sobremi-1.PNG");
     height: 90vh;
     width: 49.5vw;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; }
   .sobre-mi div .sobremi-imagen-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/sobremi-2.PNG");
+    background-image: url("../imagenes/sobremi-2.PNG");
     height: 90vh;
     width: 49.5vw;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; }
   .sobre-mi div .sobremi-imagen-3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(137, 207, 216, 0.3)), url("../imagenes/sobremi-3.PNG");
+    background-image: url("../imagenes/sobremi-3.PNG");
     height: 90vh;
     width: 49.5vw;
     background-repeat: no-repeat;
@@ -5373,7 +5373,8 @@ body {
       font-size: 1.5rem;
       background-color: black;
       color: white;
-      padding: 0.5rem; }
+      padding: 0.5rem;
+      margin-bottom: 1.5rem; }
     .sobre-mi .sobre-mi-texto .sobre-mi-texto--margin {
       margin: 6rem;
       margin-top: 0; }

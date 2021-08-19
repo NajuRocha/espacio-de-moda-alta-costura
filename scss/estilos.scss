@@ -362,11 +362,7 @@ body {
 
   div {
     .sobremi-imagen-1 {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.3),
-          rgba(137, 207, 216, 0.3)
-        ),
-        url("../imagenes/sobremi-1.PNG");
+      background-image: url("../imagenes/sobremi-1.PNG");
       height: 90vh;
       width: 49.5vw;
       background-repeat: no-repeat;
@@ -374,11 +370,7 @@ body {
       background-size: cover;
     }
     .sobremi-imagen-2 {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.3),
-          rgba(137, 207, 216, 0.3)
-        ),
-        url("../imagenes/sobremi-2.PNG");
+      background-image: url("../imagenes/sobremi-2.PNG");
       height: 90vh;
       width: 49.5vw;
       background-repeat: no-repeat;
@@ -386,11 +378,7 @@ body {
       background-size: cover;
     }
     .sobremi-imagen-3 {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.3),
-          rgba(137, 207, 216, 0.3)
-        ),
-        url("../imagenes/sobremi-3.PNG");
+      background-image: url("../imagenes/sobremi-3.PNG");
       height: 90vh;
       width: 49.5vw;
       background-repeat: no-repeat;
@@ -411,6 +399,7 @@ body {
       background-color: black;
       color: white;
       padding: 0.5rem;
+      margin-bottom: 1.5rem;
     }
 
     .sobre-mi-texto--margin {
