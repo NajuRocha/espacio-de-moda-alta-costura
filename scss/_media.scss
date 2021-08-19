@@ -1,5 +1,6 @@
 @media (max-width: 768px) {
-  //GENERAL INDEX
+  //GENERAL INDEX------------------------------------------------------------------------
+
   html {
     font-size: 75%;
   }
@@ -23,6 +24,7 @@
       align-items: center;
       justify-content: center;
       margin-left: 5% !important;
+      font-size: 1.5rem !important;
     }
     .index-foto {
       display: none;
@@ -31,7 +33,16 @@
       width: 100%;
     }
   }
-  //SOBRE MI
+
+  .info-personal {
+    width: 90% !important;
+    .botones {
+      width: 7rem;
+    }
+  }
+
+  //SOBRE MI------------------------------------------------------------------------
+
   section {
     .sobre-mi {
       display: flex;
@@ -59,7 +70,9 @@
         width: 80vw;
         .sobre-mi-texto--margin {
           margin: 0;
-          margin-bottom: 6rem;
+          margin-top: 2rem;
+          margin-bottom: 3rem;
+          text-align: center;
         }
       }
     }
@@ -70,10 +83,12 @@
   html {
     font-size: 60%;
     p {
-      font-size: 1.2rem;
+      font-size: 1.5rem !important;
     }
   }
-  //COLECCIONES
+
+  //COLECCIONES------------------------------------------------------------------------
+
   .colecciones {
     display: flex;
     flex-direction: column;
@@ -87,7 +102,8 @@
     }
   }
 
-  //SOBRE MI
+  //SOBRE MI------------------------------------------------------------------------
+
   .sobre-mi {
     div {
       .sobre-mi-imagen {

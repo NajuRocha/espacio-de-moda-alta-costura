@@ -37,7 +37,7 @@ header {
       align-items: center;
 
       .navbar-toggler {
-        background-color: goldenrod;
+        background-color: gray;
       }
     }
 
@@ -55,7 +55,7 @@ header {
         transition: all 0.5s;
 
         &:hover {
-          background-color: #b4814c;
+          background-color: #000000;
           color: #fff;
         }
 
@@ -78,6 +78,10 @@ header {
 /*Navbar*/
 .navbar-toggler {
   margin-top: 1rem;
+}
+/*-------------------------------DIVISOR-----------------------------*/
+.divisor {
+  margin-bottom: 3rem;
 }
 
 /*-------------------------------FOOTER--------------------------------*/
@@ -143,11 +147,13 @@ header {
   }
 
   .volver {
-    background-color: #b4814c;
-    border-radius: 10px;
+    background-color: black;
+    color: white;
     padding: 0.5rem;
-    margin-bottom: 1rem;
     font-size: 1.2rem;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    text-decoration: none;
 
     a {
       color: #fff;
